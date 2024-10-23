@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"
+     crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Screenshot 2024-07-06 233936.png"
+                    class="logo">
+                                    <ul>
+                                        <li><a href="#header">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#Contact">Contact</a></li>
+                                    </ul>
+                </nav>
+            <div class="header-text">
+                <p>Calisthenic Athlete</p>
+                <h1>Hii, Myself <span>Eredie</span><br> Effin From Bharat</h1>
+                </div>
+            </div>
+        </div>
+        <!---------------------about--------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Screenshot 2024-10-20 202828.png">
+                    </div>
+                </div class="about-col-2">
+                             <h1 class="sub-title">About Me</h1>
+                             <p> Hii, Myself Eredie Effin From Bharat, Mastering my bodyweight with precision and control, 
+                                pushing limits through dynamic, functional strength. Calisthenics sculpts endurance and mobility, optimizing peak athletic performance. </p>
+
+                                <div class="tab-titles">
+                                     <p class="tab-links active-link"
+onclick="opentab('skills')">Skills</p>    
+                        <p class="tab-links"    
+onclick="opentab('Experience')">Experience</p>    
+                        <p class="tab-links"      
+onclick="opentab('Education')">Education</p>    
+                     </div>
+                     <div class="tab-contents active-tab"  id="skills">
+                          <ul>
+                            <li><span>Intemediate CaliAthlete</span><br>Cult Fit 
+Trainer</li>
+                            <li><span>Gymnastics 
+Yoga</span><br>Gymnastic Yoga Trainer </li>
+                                      <li><span>YouTube Automation</span><br>Video
+Editor and Content Modifier</li>
+                          </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                         <ul>
+                            <li><span>Student</span><br>SY Ai Engineer</li>
+                         </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>SSC</span><br>National Sarvodaya High
+School</li>
+                            <li><span>HSC</span><br>Swami Vivekananda 
+Jr. College Of Science      </li>
+                            <li><span>SY</span><br>Tata institute 
+of Social Sciences </li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Contact--------------------->
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>
+eredieefin@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>
+8591914869</p>
+                <div class="social-ions">
+                    <a
+href="https://in.pinterest.com/eredie24/"><i class="fa-brands
+fa-facebook"></i></a>
+                        <a
+href="https://www.instagram.com/eredieeffin/"><i class="fa-brands
+fa-instagram"></i></a>
+                        <a href="https://x.com/YPandey77"><i class="fa-brands
+                            fa-twitter"></i></a>
+                   </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+   
+    <script>
+        var tablinks = document.getElementsByClassName ("tab-links") ;
+        var tabcontents  =
+document.getElementsByClassName("tab-contents") ;
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+document.getElementbyId(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    </body>
+    </html>
+
+                                                                    
+                                
+    
+    
+
+        
+
+    
+
+
+
+        

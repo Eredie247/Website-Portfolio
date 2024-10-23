@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Screenshot 2024-07-06 233936.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+.header-text {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+}
+
+span {
+    color: #007bff;
+}
+
+#about {
+    padding: 100px 0;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sub-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.tab-links {
+    cursor: pointer;
+    padding: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.tab-links.active-link {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+}
+
+.tab-contents {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    font-weight: bold;
+    color: #333;
+}
+
+#Contact {
+    background: #333;
+    color: white;
+    padding: 100px 0;
+}
+
+.contact-left {
+    text-align: center;
+}
+
+.contact-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-left p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.social-ions a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-ions a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+    }
+
+    .tab-links {
+        margin: 10px 0;
+    }
+}
